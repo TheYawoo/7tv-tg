@@ -1,5 +1,6 @@
 # 7tv-tg
-Telegram Desktop Client with 7TV emotes. WIP.
+Open-source Telegram client for easy 7TV emotes. WIP
+![hippo](https://i.imgur.com/6mPikVM.gif)
 
 # Dependencies
 - Node.js v18 or newer
@@ -11,5 +12,5 @@ Telegram Desktop Client with 7TV emotes. WIP.
 4.  `npm i -D electron-builder cross-env`
 5.  `npm run dev`
 
-# BETA
-This is still beta, this client preloads emote-set `01FQTMFVT00000QXHG0DRS80W1` with 870 emotes (PWGood Twitch).
+# WIP
+This is early version, this client preloads emote-set `01FQTMFVT00000QXHG0DRS80W1` with 870 emotes (PWGood Twitch).
