@@ -1,0 +1,86 @@
+/* Toast */
+#e7-toast {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(32,32,32,0.9);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  z-index: 999999;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+
+/* Suggestion dropdown */
+#e7-suggest {
+  position: fixed;
+  min-width: 220px;
+  max-width: 360px;
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--e7-bg, #1f1f1f);
+  color: var(--e7-fg, #fff);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  z-index: 999999;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  padding: 6px 0;
+}
+
+.e7-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.e7-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.e7-item .e7-name {
+  opacity: 0.9;
+}
+
+.e7-item.active,
+.e7-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Container mimicking Telegram emoji metrics */
+.emoji.e7-emoji {
+  display: inline-block;
+  width: 1.375em;
+  height: 1.375em;
+  line-height: 1.375em;
+  vertical-align: -0.25em; /* adjust until baseline matches TG emoji */
+  margin: 0 0.05em;
+}
+
+/* Image fills container */
+.emoji.e7-emoji > img.e7-emote {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+  pointer-events: none;
+}
+
+/* Big emoji mode */
+.emoji.e7-emoji.e7-emoji--big {
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: -0.4em;
+}
+
+
+

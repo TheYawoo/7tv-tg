@@ -1,0 +1,50 @@
+{
+  "name": "7tv-tg",
+  "version": "1.0.0",
+  "description": "telegram with 7tv emotes.",
+  "main": "electron/main.js",
+  "author": "Yawoo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env ELECTRON_START_URL=https://web.telegram.org/k electron .",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "app.tg7tv.webk",
+    "productName": "Telegram WebK + 7TV",
+    "files": [
+      "electron/**/*",
+      "renderer/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "icon": "assets/icon.png",
+      "hardenedRuntime": true
+    },
+    "win": {
+      "icon": "assets/icon.png",
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "category": "Chat",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "extraMetadata": {
+      "name": "tg-7tv-webk"
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
