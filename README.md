@@ -12,4 +12,4 @@ Telegram Desktop Client with 7TV emotes. WIP.
 5.  `npm run dev`
 
 # BETA
-This is still beta, this client preloads emote-set `01FQTMFVT00000QXHG0DRS80W1` (PWGood Twitch)
+This is still beta, this client preloads emote-set `01FQTMFVT00000QXHG0DRS80W1` with 870 emotes (PWGood Twitch).
